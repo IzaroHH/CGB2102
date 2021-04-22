@@ -5,6 +5,9 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/CGB2102.iml" filepath="$PROJECT_DIR$/.idea/CGB2102.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring_1_base/spring_1_base.iml" filepath="$PROJECT_DIR$/spring_1_base/spring_1_base.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring_demo_1_ioc/spring_demo_1_ioc.iml" filepath="$PROJECT_DIR$/spring_demo_1_ioc/spring_demo_1_ioc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring_demo_2_factory/spring_demo_2_factory.iml" filepath="$PROJECT_DIR$/spring_demo_2_factory/spring_demo_2_factory.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring_demo_3_di/spring_demo_3_di.iml" filepath="$PROJECT_DIR$/spring_demo_3_di/spring_demo_3_di.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring_demp_4_mvc/spring_demp_4_mvc.iml" filepath="$PROJECT_DIR$/spring_demp_4_mvc/spring_demp_4_mvc.iml" />
     </modules>
   </component>
 </project>

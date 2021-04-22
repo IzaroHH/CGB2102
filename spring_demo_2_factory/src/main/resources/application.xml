@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!--通过bean标签完成对象的创建-->
+    <bean id="calendar1"  class="com.jt.factory.StaticFactory" factory-method="getCalendar"/>
+
+    <!-- 实例化工厂 步骤1:将工厂交给spring容器管理 步骤2:通过对象调用方法-->
+    <bean id="instanceFactory" class="com.jt.factory.InstanceFactory"/>
+    <bean id="calendar2" factory-method="getCalendar" factory-bean="instanceFactory"/>
+
+    <!--    <bean id="user" class="com.jt.pojo.User" lazy-init="true" />-->
+
+    <!--    测试对象的生命周期-->
+    <bean id="user" class="com.jt.pojo.User" init-method="init" destroy-method="destroy"/>
+</beans>

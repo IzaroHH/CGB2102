@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:util="http://www.springframework.org/schema/util"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd">
+
+
+    <!--    为集合赋值-->
+    <!--    <bean id="user" class="com.jt.pojo.User">-->
+    <!--&lt;!&ndash;        实际调用set方法实现赋值  set方法必须添加&ndash;&gt;-->
+    <!--        <constructor-arg name="id" value="101"/>-->
+    <!--        <constructor-arg name="name" value="李元芳"/>-->
+    <!--        -->
+    <!--    </bean>-->
+
+    <bean id="user" class="com.jt.pojo.User">
+        <!--        实际调用set方法实现赋值  set方法必须添加-->
+        <property name="id" value="101"/>
+        <property name="name" value="李元芳"/>
+        <property name="list">
+            <list>
+                <value>张三</value>
+                <value>王五</value>
+                <value>老王</value>
+            </list>
+        </property>
+        <property name="set">
+            <list>
+                <value>1</value>
+                <value>2</value>
+                <value>3</value>
+            </list>
+        </property>
+        <property name="map" ref="map"/>
+        <property name="pro">
+            <props>
+                <prop key="proId">110</prop>
+                <prop key="proName">米🐀</prop>
+            </props>
+        </property>
+    </bean>
+    <bean id="person" class="com.jt.pojo.Person">
+        <property name="map" ref="map"/>
+    </bean>
+    <util:map id="map">
+        <entry key="id" value="100000"/>
+        <entry key="name" value="tomcat🐱🐕"/>
+    </util:map>
+
+</beans>
