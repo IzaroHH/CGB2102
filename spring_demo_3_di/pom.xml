@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.jt</groupId>
-    <artifactId>spring_demo_2_factory</artifactId>
+    <artifactId>spring_demo_3_di</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <dependencies>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+    <!--    1.构建user对象-->
+    <bean id="user" class="com.jt.pojo.User">
+        <property name="id" value="100"/>
+        <property name="name">
+            <value><![CDATA[范冰冰]]></value>
+        </property>
+    </bean>
+    <!--2.构建Dao对象
+        根据面向接口编程
+        Id写的是接口的名称
+        class:实现类的包路径
+    -->
+    <bean id="userDao" class="com.jt.dao.UserDaoImpl"/>
+
+    <!--    3.构建Service
+    自动装配:程序无需手动的编辑property属性
+    autowire="byName"根据属性的名称进行注入
+    1.找到对象的所有的set方法 setUserDao()
+    2.setUserDao~~~~set去掉~~~~UserDao~~~~首字母小写~~~userDao属性
+    3.spring会根据对象的属性查询自己维护的Map集合,根据userDao名称,查找Map
+    中的Key与之对应,如果匹配成功,则能自动调用set方法实现注入(必须有set方法)
+
+    autowire="byType"
+    1.找到对象的所有set方法-->
+    <bean id="userService" class="com.jt.service.com.jt.service.UserServiceImpl" autowire="byType"/>
+
+    <!--4.构建Controller-->
+    <bean id="userController" class="com.jt.controller.UserController" autowire="byName"/>
+
+</beans>

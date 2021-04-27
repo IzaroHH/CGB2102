@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+                           http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <!--1.构建user对象-->
+    <bean id="user" class="com.jt.pojo.User">
+        <property name="id" value="100"/>
+        <property name="name">
+            <value><![CDATA[<范冰冰>]]></value>
+        </property>
+    </bean>
+
+    <!--2.
+       让注解生效,开启包扫描
+       包路径特点: 给定包路径,则自动扫描同包及子孙包中的类
+       base-package: 根据指定的包路径 查找注解
+       写方式: 多个包路径 使用,号分隔
+    -->
+    <!--<context:component-scan base-package="com.jt.controller,com.jt.service,com.jt.dao"></context:component-scan>-->
+    <!--<context:component-scan base-package="com.jt"></context:component-scan>-->
+
+    <!--业务需求1: 只想扫描@controller注解
+        属性说明: use-default-filters="true"
+                 默认规则 :true  表示可以扫描其他注解
+                         :false  按照用户指定的注解进行加载,默认规则不生效
+    -->
+    <context:component-scan base-package="com.jt" />
+        <!--当前的包扫描 只有Service有效-->
+
+
+
+
+</beans>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:util="http://www.springframework.org/schema/util"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd">
+
+    <bean id="user" class="com.jt.pojo.User">
+        <property name="id" value="100"/>
+        <property name="name" value="MVC"/>
+    </bean>
+
+    <bean id="userDao" class="com.jt.dao.UserDaoImpl"/>
+
+    <bean id="userService" class="com.jt.service.com.jt.service.UserServiceImpl">
+        <property name="userDao" ref="userDao"/>
+    </bean>
+    
+    <bean id="userController" class="com.jt.controller.UserController">
+        <property name="userService" ref="userService"/>
+        <property name="user" ref="user"/>
+    </bean>
+</beans>
