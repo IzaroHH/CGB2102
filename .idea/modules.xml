@@ -16,6 +16,8 @@
       <module fileurl="file://$PROJECT_DIR$/spring_demo_test/spring_demo_test.iml" filepath="$PROJECT_DIR$/spring_demo_test/spring_demo_test.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring_demo_test_1/spring_demo_test_1.iml" filepath="$PROJECT_DIR$/spring_demo_test_1/spring_demo_test_1.iml" />
       <module fileurl="file://$PROJECT_DIR$/springboot_demo_1/springboot_demo_1.iml" filepath="$PROJECT_DIR$/springboot_demo_1/springboot_demo_1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot_demo_2/springboot_demo_2.iml" filepath="$PROJECT_DIR$/springboot_demo_2/springboot_demo_2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot_demo_test/springboot_demo_test.iml" filepath="$PROJECT_DIR$/springboot_demo_test/springboot_demo_test.iml" />
     </modules>
   </component>
 </project>
