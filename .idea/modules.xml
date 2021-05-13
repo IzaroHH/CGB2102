@@ -3,6 +3,9 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/CGB2102.iml" filepath="$PROJECT_DIR$/.idea/CGB2102.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jt/jt.iml" filepath="$PROJECT_DIR$/jt/jt.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jt/jt_common/jt_common.iml" filepath="$PROJECT_DIR$/jt/jt_common/jt_common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jt/jt_manage/jt_manage.iml" filepath="$PROJECT_DIR$/jt/jt_manage/jt_manage.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring_1_base/spring_1_base.iml" filepath="$PROJECT_DIR$/spring_1_base/spring_1_base.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring_demo_1_ioc/spring_demo_1_ioc.iml" filepath="$PROJECT_DIR$/spring_demo_1_ioc/spring_demo_1_ioc.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring_demo_2_factory/spring_demo_2_factory.iml" filepath="$PROJECT_DIR$/spring_demo_2_factory/spring_demo_2_factory.iml" />
@@ -17,6 +20,7 @@
       <module fileurl="file://$PROJECT_DIR$/spring_demo_test_1/spring_demo_test_1.iml" filepath="$PROJECT_DIR$/spring_demo_test_1/spring_demo_test_1.iml" />
       <module fileurl="file://$PROJECT_DIR$/springboot_demo_1/springboot_demo_1.iml" filepath="$PROJECT_DIR$/springboot_demo_1/springboot_demo_1.iml" />
       <module fileurl="file://$PROJECT_DIR$/springboot_demo_2/springboot_demo_2.iml" filepath="$PROJECT_DIR$/springboot_demo_2/springboot_demo_2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot_demo_4/springboot_demo_4.iml" filepath="$PROJECT_DIR$/springboot_demo_4/springboot_demo_4.iml" />
       <module fileurl="file://$PROJECT_DIR$/springboot_demo_test/springboot_demo_test.iml" filepath="$PROJECT_DIR$/springboot_demo_test/springboot_demo_test.iml" />
     </modules>
   </component>

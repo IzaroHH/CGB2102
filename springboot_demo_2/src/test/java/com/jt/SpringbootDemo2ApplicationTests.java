@@ -12,7 +12,7 @@ import javax.annotation.Resource;
 import java.util.List;
 
 @SpringBootTest
-@MapperScan("com.jt.mapper")
+
 public class SpringbootDemo2ApplicationTests {
 
     @Resource
@@ -43,5 +43,11 @@ public class SpringbootDemo2ApplicationTests {
     public void testDelete() {
         int id=231;
         userMapper.deleteUser(id);
+    }
+
+    @Test
+    public void testSelect(){
+        List<DemoUser> userList=userMapper.selectList(null);
+        System.out.println(userList);
     }
 }

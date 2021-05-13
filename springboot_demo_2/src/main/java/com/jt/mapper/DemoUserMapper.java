@@ -1,5 +1,7 @@
 package com.jt.mapper;
 
+import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
+import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.jt.pojo.DemoUser;
 
 import java.util.List;
@@ -7,7 +9,7 @@ import java.util.List;
 /**
  * @author Tedu
  */
-public interface DemoUserMapper {
+public interface DemoUserMapper extends BaseMapper<DemoUser> {
     /**
      * 查
      * @return
@@ -32,4 +34,5 @@ public interface DemoUserMapper {
      * @param id
      */
     void deleteUser(int id);
+
 }
